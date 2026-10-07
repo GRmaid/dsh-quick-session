@@ -19,7 +19,7 @@ desktop install it as a local `link:` (or wait for an npm release).
 
 ## 使用
 
-- 侧栏底部（设置旁）的 ⚡ **快捷会话** 打开输入框（Enter 开始，Shift+Enter 换行，Esc 取消）。
+- 侧栏底部（设置旁）的**快捷会话**图标打开输入框（Enter 开始，Shift+Enter 换行，Esc 取消）。
 - 提交后：宿主在 `%DSH_HOME%\scratch` 下为本会话新建独立目录，以它作为 `cwd` 创建会话，
   并把输入内容作为开场消息发出。
 - 该会话**不注册任何 Workspace**，因此侧栏把它归入「未分组」。
@@ -88,7 +88,7 @@ bundle 行用的是**相对说明符** `./lib/entry.js`（相对**本包目录**
 
 ## 图标
 
-侧栏 ⚡ 处的鲸鱼尾巴来自 https://www.bilibili.com/video/BV1fQaX6FE8b/ 这个视频评论区底下一位同好制作的 GIF。
+快捷会话图标处的鲸鱼尾巴来自 https://www.bilibili.com/video/BV1fQaX6FE8b/ 这个视频评论区底下一位同好制作的 GIF。
 那张 GIF 的 59 帧逐像素完全相同，内容上是一张静图，所以按静图处理，没有丢动画。
 
 原图是**不透明深色底**（#16181B）加浅色线稿，直接使用会在浅色主题下变成一个深色方块。因此：
@@ -100,7 +100,7 @@ bundle 行用的是**相对说明符** `./lib/entry.js`（相对**本包目录**
    按钮尺寸 20 px。
 
 图标有一层回退阶梯，保证按钮永远不会是空的：
-`TAIL_MASK`（用户作品）→ 官方 `FISH_LOGO_PATH` 的尾鳍裁切（viewBox `16.2 0 6.96 8.4`）→ `⚡` 字形。
+`TAIL_MASK`（同好制作的鲸鱼尾巴 GIF）→ 官方 `FISH_LOGO_PATH` 的尾鳍裁切（viewBox `16.2 0 6.96 8.4`）→ `⚡` 字形。
 
 ### 换图或调尺寸
 
