@@ -1,0 +1,12 @@
+# dsh-quick-session bundle patch: inserts this package's row into the profile.
+#
+# The row names a relative file inside this package rather than the bare package
+# name. A bundle row's relative specifier resolves against THIS package as its
+# base, and the loader keeps a plugin object per resolved module while Node
+# caches both the package.json `exports` map and every module URL for the whole
+# process lifetime — so only a specifier that resolves to a URL the running host
+# has never imported picks up a changed host half. Keep this path in sync when
+# the host entry file is renamed.
+- insert:
+    - id: quick-session
+      name: './lib/entry.js'
